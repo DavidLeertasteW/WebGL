@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Quarantine Companion</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
-    </script>
-  </head>
-  <body>
-  
-    <div id="unityContainer" </div>
-	<style>
+  <style>
 	{
     margin:0;padding:0;
    
     background-image: url("https:quarantine-companion.de/assets/images/container04.jpg?v61787734419851");
 }
 
-div
+unityContainer
 {
     width: 100vw;
     height: 90vh; /* 100/56.25 = 1.778 */
@@ -37,5 +25,18 @@ div
     left:0;right:0; /* horizontal center */
 }
 	</style>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Quarantine Companion</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
+    </script>
+  </head>
+  <body>
+  
+    <div id="unityContainer" </div>
+	
   </body>
 </html>
