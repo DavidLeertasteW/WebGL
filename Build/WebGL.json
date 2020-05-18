@@ -7,7 +7,7 @@
 "wasmFrameworkUrl": "WebGL.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
-"splashScreenStyle": "Dark",
+"splashScreenStyle": "Light",
 "backgroundColor": "#231F20",
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
