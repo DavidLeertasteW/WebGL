@@ -21,35 +21,51 @@
 	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <style>
    
-	
+	html {
+        box-sizing: border-box;
+		position: relative;
+      }
 	body{
     
     background-image: url("TilingBackground.jpg");
 	margin: 0;
 	}
-
-	#unityContainer
+	script{
+    
+    background-image: url("TilingBackground.jpg");
+	margin: 0;
+	box-sizing: border-box;
+	}
+	#container
 	{
-    width: 100vw;
+	width: 100vw;
     height: 90vh; /* 100/56.25 = 1.778 */
     max-height: 100vh;
     max-width: 50.625vh; /* 16/9 = 1.778 */
     margin: auto;
-    outline: 5px;
     border-radius: 3%;
     overflow: hidden;
-    position: absolute;
     box-shadow: 0px 0px 45px black;
-    background: blue;
-    top:0;bottom:0; /* vertical center */
-    left:0;right:0; /* horizontal center */
+    background: white;
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
 	}
+
+	#unityContainer
+	{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	}
+
 	</style>
   
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Quarantine Companion</title>
-	<script src="Build/UnityLoader.js"></script>
+	<script src="Build/UnityLoader.js"; position="absolute"></script>
     <script>
       UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
     </script>
@@ -57,8 +73,8 @@
 	
   </head>
   <body>
-  
-    <div id="unityContainer"></div>
-	
+	<div id="container">
+		<div id="unityContainer"></div>
+	</div>
   </body>
 </html>
